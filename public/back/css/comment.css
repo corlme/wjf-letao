@@ -1,0 +1,13 @@
+.body_bg {
+  background-color: #222D32;
+}
+.panel .panel-title {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+.mt_150 {
+  margin-top: 150px;
+}
