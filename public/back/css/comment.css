@@ -1,6 +1,29 @@
 .body_bg {
   background-color: #222D32;
 }
+.red {
+  color: red;
+}
+ 
+a,
+a:link,
+a:valid,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
 .panel .panel-title {
   height: 30px;
   line-height: 30px;
@@ -10,4 +33,101 @@
 }
 .mt_150 {
   margin-top: 150px;
+}
+
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: skyblue;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu {
+ left:-180px;
+}
+.lt_aside .brand {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 18px;
+  background-color: blue;
+}
+.lt_aside .brand a {
+  color: #fff;
+}
+.lt_aside .user {
+  padding-top: 30px;
+}
+.lt_aside .user img{
+ width: 90px;
+ height: 90px;
+ display: block;
+ margin: 0 auto;
+ border-radius: 50%;
+}
+.lt_aside .user p {
+ height: 40px;
+ line-height: 40px;
+ text-align: center;
+ color: #fff;
+ font-size: 16px;
+}
+
+.lt_aside .nav ul li a {
+  display: block;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+}
+.lt_aside .nav ul li a.current {
+  background-color: blue;
+  border-left: 3px solid red;
+}
+
+.lt_aside .nav .child a {
+  padding-left: 60px;
+}
+
+/* 右侧主体样式 */
+.lt_main {
+  height: 1000px;
+  padding-left: 180px;
+  padding-top: 60px;
+  transition: all 1s;
+}
+.lt_main.hidemenu {
+  padding-left: 0px;
+}
+.lt_topbar {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-left: 180px;
+  background-color: blue;
+  transition: all 1s;
+}
+.lt_topbar.hidemenu{
+  padding-left: 0px;
+}
+.lt_topbar a {
+  /* 因为已经有了浮动了 ，所以不需要再加display：block */
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.mt_20 {
+  margin-top: 20px;
 }
