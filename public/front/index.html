@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 配置移动端视口 -->
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>乐淘商城移动端</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/comment.css">
+</head>
+<body>
+  <!-- mui 移动框架中的字体图标的用法 -->
+  <!-- <span class="mui-icon mui-icon-contact"></span> -->
+  <!-- font-awesome 字体图标库插件用法-->
+  <!-- <span class="fa fa-file-word-o"></span> -->
+
+  <!-- 布局容器 -->
+  <div class="lt_container">
+      <div class="lt_header">
+         <a href="#"><i class="fa fa-home icon_left"></i></a>
+         <a href="#"><i class="fa fa-search icon_right"></i></a>
+         <span class="title">乐淘商城</span>
+      </div>
+      <div class="lt_main">
+
+          <div class="mui-scroll-wrapper">
+              <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+
+                <!-- 轮播图 -->
+                <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                      <!--支持循环，需要重复图片节点-->
+                      <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/banner6.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="images/banner1.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="images/banner2.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="images/banner3.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="images/banner4.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="images/banner5.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="images/banner6.png" /></a></div>
+                      <!--支持循环，需要重复图片节点-->
+                      <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/banner1.png" /></a></div>
+              
+                    </div>
+                    <!-- 小圆点结构 -->
+                   <div class="mui-slider-indicator">
+                      <a class="mui-indicator mui-active">
+                      </a>
+                      <a class="mui-indicator">
+                      </a>
+                      <a class="mui-indicator">
+                      </a>
+                      <a class="mui-indicator">
+                      </a>
+                      <a class="mui-indicator">
+                      </a>
+                      <a class="mui-indicator">
+                      </a>
+                   </div>
+                </div>
+
+                <!-- 导航 -->
+                <div class="lt_nav">
+                  <ul class="mui-clearfix">
+                    <li><a href="#"><img src="images/nav1.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/nav2.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/nav3.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/nav4.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/nav5.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/nav6.png" alt=""></a></li>
+                  </ul>
+                </div>
+
+                <!-- 产品部分 -->
+                <div class="lt_product">
+                  <ul>
+                      <li class="lt_product_item">
+                          <a href="#">
+                            <img src="./images/product.jpg" alt="">
+                            <p class="info mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                            <p>
+                              <span class="price">¥560</span>
+                              <span class="oldPrice">¥580</span>
+                            </p>
+                            <button class="mui-btn mui-btn-primary">立即购买</button>
+                          </a>
+                        </li>
+                        <li class="lt_product_item">
+                            <a href="#">
+                              <img src="./images/product.jpg" alt="">
+                              <p class="info mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                              <p>
+                                <span class="price">¥560</span>
+                                <span class="oldPrice">¥580</span>
+                              </p>
+                              <button class="mui-btn mui-btn-primary">立即购买</button>
+                            </a>
+                          </li>
+                  </ul>
+                </div>
+
+              </div>
+          </div>
+      </div>
+      <div class="lt_footer">
+          <ul>
+            <li>
+              <a href="#" class="current">
+                <i class="fa fa-home"></i>
+                <p>首页</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-bars"></i>
+                <p>分类页</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <p>购物车</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-user"></i>
+                <p>个人中心</p>
+              </a>
+            </li>
+          </ul>
+      </div>
+  </div>
+  
+
+
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/mui/js/mui.js"></script>
+  <script src="js/comment.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+html,body {
+  width: 100%;
+  height: 100%;
+}
+/* lvha */
+a,
+a:link,
+a:valid,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.lt_container {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-width:320px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+.lt_header {
+  width: 100%;
+  height: 45px;
+  background-color: #000;
+  /* 移动端尽量不要用fixed固定定位，因为低版本的ios系统不兼容 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.lt_header .icon_left {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 7px;
+  top: 9px;
+  color: #fff;
+  font-size: 25px;
+
+}
+.lt_header .icon_right {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 7px;
+  top: 9px;
+  color: #fff;
+  font-size: 25px;
+}
+.lt_header .title {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+/* 底部样式 */
+/* .lt_footer {
+  width: 100%;
+  height: 55px;
+  background-color: skyblue;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.lt_footer ul {
+ padding: 10px 0;
+}
+.lt_footer ul li {
+  float: left;
+  margin-left: 100px;
+}
+.lt_footer ul li a {
+  display: block;
+  text-align: center;
+} */
+
+
+.lt_footer {
+  width: 100%;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.lt_footer ul {
+  display: flex;
+  /* 水平居中 */
+  justify-content: space-around;
+  /* 垂直居中 */
+  align-items: center;
+  padding-top: 6px;
+}
+.lt_footer ul li {
+  text-align: center;
+}
+.lt_footer ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+.lt_footer ul li a.current i,
+.lt_footer ul li a.current p{
+   color:orange;
+}
+.lt_footer ul li a p{
+  color: #fff; 
+}
+
+
+.lt_main {
+  width: 100%;
+  height: 100%;
+  /* 因为mui插件中的子元素是定位布局，所有父元素要加定位 */
+  position: relative;
+}
+
+/* 导航样式 */
+.lt_nav {
+  padding: 10px;
+}
+.lt_nav ul li a {
+  float: left;
+  width: 33.33%;
+}
+.lt_nav ul li a img {
+  width: 100%;
+  /* 可以清除浮动 */
+  display: block;  
+}
+
+/* 公共的商品样式 */
+.lt_product {
+  padding: 10px;
+}
+.lt_product_item {
+width: 48%;
+float: left;
+padding: 10px;
+margin-bottom: 10px;
+text-align: center;
+border: 1px solid skyblue;
+}
+.lt_product_item:nth-child(odd){
+  margin-right: 4%;
+}
+.lt_product_item a {
+  display: block;
+}
+.lt_product_item .info {
+  text-align: left;
+  height: 40px;
+}
+.lt_product_item .price {
+  color: red;
+}
+.lt_product_item .oldPrice {
+  text-decoration: line-through;
+}
+.lt_product_item img {
+  width: 100%;
+}
