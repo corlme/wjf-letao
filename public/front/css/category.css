@@ -1,0 +1,41 @@
+.lt_category_left {
+  float: left;
+  width: 90px;
+  height: 100%;
+  position: relative;
+}
+.lt_category_left li a.current {
+  background-color: #fff;
+  border-right: none;
+}
+.lt_category_left li a {
+  display: block;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #e3e3e3;
+}
+.lt_category_right {
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+/* float:left + overflow:hidden = BFC布局了(也就是块级格式上下文) */
+.lt_category_right li {
+  float: left;
+  width: 33.3%;
+}
+.lt_category_right li img {
+  display: block;
+  /* 转存块级元素之后，就可以通过margin：0 auto 来居中了 */
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+}
+.lt_category_right li p {
+  text-align: center;
+}
