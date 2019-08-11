@@ -16,3 +16,29 @@
 .lt_sort a i{
   margin: 0 3px;
 }
+
+/* 加载图标的样式 */
+.loading {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px dashed skyblue;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+
+  /* 使用动画 */
+  /* animation: 动画名称 动画时间 动画次数(infinite无限次) 动画速度(linear:匀速。ease-in-out:动画以低速开始和结束。) */
+  animation: rotate 2s infinite ease-in-out;
+}
+
+/* css3定义动画  keyframes:关键帧 */
+@keyframes rotate {
+   from {
+      transform:translateX(-50%)  rotate(0deg)
+   }
+   to {
+     transform:translateX(-50%) rotate(360deg)
+   }
+}

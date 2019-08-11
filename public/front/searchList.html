@@ -38,8 +38,8 @@
                 <!-- 排序 -->
                 <div class="lt_sort">
                   <a href="#">上架时间<i class="fa fa-angle-down"></i></a>
-                  <a href="#" class="current">价格<i class="fa fa-angle-down"></i></a>
-                  <a href="#">库存<i class="fa fa-angle-down"></i></a>
+                  <a href="#" data-type='price' class="current">价格<i class="fa fa-angle-down"></i></a>
+                  <a href="#" data-type='num'>库存<i class="fa fa-angle-down"></i></a>
                   <a href="#">折扣<i class="fa fa-angle-down"></i></a>
                 </div>
 
@@ -47,6 +47,7 @@
                  <div class="lt_product">
                     <ul>
                         <!-- 挖个坑 -->
+                        <div class="loading"></div>
                     </ul>
                   </div>
 
@@ -89,6 +90,7 @@
           <a href="#">
             <img src="{{v.pic[0].picAddr}}" alt="">
             <p class="info mui-ellipsis-2">{{v.proName}} </p>
+
             <p>
               <span class="price">￥{{v.price}}</span>
               <span class="oldPrice">￥{{v.oldPrice}}</span>
