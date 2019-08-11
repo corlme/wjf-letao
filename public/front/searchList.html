@@ -47,7 +47,7 @@
                  <div class="lt_product">
                     <ul>
                         <!-- 挖个坑 -->
-                        <div class="loading"></div>
+                        <!-- <div class="loading"></div> -->
                     </ul>
                   </div>
 
@@ -85,12 +85,12 @@
 
 
   <script type="text/template" id="productTpl">
+    <ul>
       {{each data v i}}
       <li class="lt_product_item">
-          <a href="#">
-            <img src="{{v.pic[0].picAddr}}" alt="">
+          <a href="product.html?productId = {{ v.id }}" data-id={{v.id}}>
+            <img src=" " alt="">
             <p class="info mui-ellipsis-2">{{v.proName}} </p>
-
             <p>
               <span class="price">￥{{v.price}}</span>
               <span class="oldPrice">￥{{v.oldPrice}}</span>
@@ -99,13 +99,13 @@
           </a>
         </li>
       {{/each}}
-  
+    </ul>
   </script>
 
   <script src="lib/artTemplate/template-web.js"></script>
   <script src="lib/zepto/zepto.min.js"></script>
   <script src="lib/mui/js/mui.js"></script>
   <script src="js/comment.js"></script>
-  <script src="js/searchList.js"></script>
+  <script src="js/searchList2.js"></script>
 </body>
 </html>
