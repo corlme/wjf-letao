@@ -1,6 +1,4 @@
 // 此函数专门用于获取解析地址栏参数 （页面与页面之间传值接收）
-
-$(function() {
   function getSearchUrlParams(k) {
     //  获取地址栏参数
     var search = location.search; // "?name=%E5%8C%A1%E5%A8%81&age=18&desc=%E5%B8%85"
@@ -24,4 +22,3 @@ $(function() {
     });
     return obj[k];
   }
-});
