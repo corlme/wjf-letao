@@ -60,7 +60,7 @@ $(function() {
           mui.confirm('添加成功','温馨提示',['去购物车','继续浏览'],function( e ) {
             if(e.index === 0){
               // 去购物车
-              // location.href = 'cart.html'
+              location.href = 'cart.html'
             }
           })
         }
