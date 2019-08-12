@@ -208,3 +208,19 @@ border: 1px solid skyblue;
 .lt_product_item img {
   width: 100%;
 }
+
+/* 公共的尺码样式 */
+
+.lt_size span {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  display: inline-block;
+  margin: 3px 0;
+  border: 1px solid #ccc;
+}
+.lt_size span.current {
+  background-color: orange;
+  color: #fff;
+}
