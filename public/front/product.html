@@ -80,12 +80,8 @@
        <span class="price">￥{{ price }}</span>
        <span class="oldPrice">￥{{ oldPrice }}</span>
     </div>
-
+    
     <!-- 产品尺码 -->
-    <!-- art-template模块支持两种语法：
-     标准语法: {{ if (user) }}
-     原生语法:<% if(user) %>   输出：<%= %> 原生语法里面可以写js语句 逻辑功能强大
-    -->
     <div class="lt_size item_box"> 尺码:
       <% 
       var start = size.split('-')[0]  // 得到32

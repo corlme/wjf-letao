@@ -26,7 +26,7 @@ $(function() {
   })
 
   // 1.给尺码添加选中功能
-  $('.lt_size').on('click', 'span', function() {
+  $('.lt_main').on('click', '.lt_size span', function() {
     $(this).addClass('current').siblings().removeClass('current')
   })
   
@@ -37,6 +37,8 @@ $(function() {
   $('#addCart').click(function() {
     var size = $('.lt_size span.current').text()
     var num = $('.mui-numbox-input').val()
+    console.log(size,num);
+    
     if(!size){
       mui.toast('请选择尺码')
       return
@@ -52,13 +54,13 @@ $(function() {
       },
       dataType:'json',
       success:function(info){
-        console.log(info);
+        console.log('111',info);
         if(info.success){
           // 如果成功 弹出一个确认框
           mui.confirm('添加成功','温馨提示',['去购物车','继续浏览'],function( e ) {
             if(e.index === 0){
               // 去购物车
-              location.href = 'cart.html'
+              // location.href = 'cart.html'
             }
           })
         }
